@@ -35,6 +35,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: static;
 }
 .details{
    display: none;
@@ -56,4 +57,10 @@ button:hover{
 }
 .col2{
     margin-left: 90px;
+}
+.butt{
+    
+}
+.buttRight{
+    margin-left: 30px;
 }

@@ -13,16 +13,18 @@ export default function Card({ e }) {
     const inputElem = useRef(1);
     function setDis(  ){
         alert("dshf ")
-        setShowDetails(true)
        
+
            if(showDetails==false)
             {
 
                 inputElem.current.style.display="block"
+                setShowDetails(true)
             }
             else{
-                inputElem.current.style.display="none"
                 butt = "show Details"
+                inputElem.current.style.display="none"
+                setShowDetails(false)
             }
       }
     return (
@@ -44,7 +46,6 @@ export default function Card({ e }) {
                         <p className="card_detail">{e.address.city}</p>
                     </div>
                     <button  onClick={setDis}>
-
                            {butt}
                     </button>
                 </div>
